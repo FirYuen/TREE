@@ -16,36 +16,14 @@
         "seen": true,
         "name": "package.json"
       },
-      "LICENSE.md": {
-        "previousModTime": 1477108710000,
-        "modified": 1477108710000,
-        "seen": true,
-        "name": "LICENSE.md"
-      },
-      "README.md": {
-        "previousModTime": 1477108710000,
-        "modified": 1477108710000,
-        "seen": true,
-        "name": "README.md"
-      },
-      "icon.png": {
-        "previousModTime": 1477108710000,
-        "modified": 1477108710000,
-        "seen": true,
-        "name": "icon.png"
-      },
+      
       "main.js": {
         "previousModTime": 1478008695000,
         "modified": 1478008695000,
         "seen": true,
         "name": "main.js"
       },
-      "websockets_client.png": {
-        "previousModTime": 1477108710000,
-        "modified": 1477108710000,
-        "seen": true,
-        "name": "websockets_client.png"
-      },
+      
       "client/index.css": {
         "previousModTime": 1477108710000,
         "modified": 1477108710000,
@@ -58,42 +36,7 @@
         "seen": true,
         "name": "client/index.js"
       },
-      "client/jquery-1.12.4.js": {
-        "previousModTime": 1477108712000,
-        "modified": 1477108712000,
-        "seen": true,
-        "name": "client/jquery-1.12.4.js"
-      },
-      "client/jquery-ui.css": {
-        "previousModTime": 1477108712000,
-        "modified": 1477108712000,
-        "seen": true,
-        "name": "client/jquery-ui.css"
-      },
-      "client/jquery-ui.js": {
-        "previousModTime": 1477108712000,
-        "modified": 1477108712000,
-        "seen": true,
-        "name": "client/jquery-ui.js"
-      },
-      "client/jquery.mobile.custom.min.js": {
-        "previousModTime": 1477108714000,
-        "modified": 1477108714000,
-        "seen": true,
-        "name": "client/jquery.mobile.custom.min.js"
-      },
-      "client/jquery.mobile.custom.structure.min.css": {
-        "previousModTime": 1477108714000,
-        "modified": 1477108714000,
-        "seen": true,
-        "name": "client/jquery.mobile.custom.structure.min.css"
-      },
-      "client/jquery.mobile.custom.theme.min.css": {
-        "previousModTime": 1477108714000,
-        "modified": 1477108714000,
-        "seen": true,
-        "name": "client/jquery.mobile.custom.theme.min.css"
-      },
+      
       "client/vue.js": {
         "previousModTime": 1477108714000,
         "modified": 1477108714000,
@@ -124,42 +67,7 @@
         "seen": true,
         "name": "wsocket.xdke"
       },
-      "client/css/bootstrap-theme.css": {
-        "previousModTime": 1414609900000,
-        "modified": 1414609900000,
-        "seen": true,
-        "name": "client/css/bootstrap-theme.css"
-      },
-      "client/css/bootstrap-theme.css.map": {
-        "previousModTime": 1414608942000,
-        "modified": 1414608942000,
-        "seen": true,
-        "name": "client/css/bootstrap-theme.css.map"
-      },
-      "client/css/bootstrap-theme.min.css": {
-        "previousModTime": 1414609900000,
-        "modified": 1414609900000,
-        "seen": true,
-        "name": "client/css/bootstrap-theme.min.css"
-      },
-      "client/css/bootstrap.css": {
-        "previousModTime": 1414609900000,
-        "modified": 1414609900000,
-        "seen": true,
-        "name": "client/css/bootstrap.css"
-      },
-      "client/css/bootstrap.css.map": {
-        "previousModTime": 1414608942000,
-        "modified": 1414608942000,
-        "seen": true,
-        "name": "client/css/bootstrap.css.map"
-      },
-      "client/css/bootstrap.min.css": {
-        "previousModTime": 1476953154000,
-        "modified": 1476953154000,
-        "seen": true,
-        "name": "client/css/bootstrap.min.css"
-      },
+      
       "client/css/mycss.css": {
         "previousModTime": 1478003632000,
         "modified": 1478003632000,
@@ -190,18 +98,7 @@
         "seen": true,
         "name": "client/fonts/glyphicons-halflings-regular.woff"
       },
-      "client/js/bootstrap.js": {
-        "previousModTime": 1414609900000,
-        "modified": 1414609900000,
-        "seen": true,
-        "name": "client/js/bootstrap.js"
-      },
-      "client/js/bootstrap.min.js": {
-        "previousModTime": 1414609900000,
-        "modified": 1414609900000,
-        "seen": true,
-        "name": "client/js/bootstrap.min.js"
-      },
+      
       "client/js/jquery.min.js": {
         "previousModTime": 1476945935000,
         "modified": 1476945935000,
@@ -388,42 +285,7 @@
         "seen": true,
         "name": "client/fonts/._glyphicons-halflings-regular.woff"
       },
-      "client/js/._.DS_Store": {
-        "previousModTime": 1477375004590,
-        "modified": 1477375004590,
-        "seen": true,
-        "name": "client/js/._.DS_Store"
-      },
-      "client/js/._bootstrap.js": {
-        "previousModTime": 1477364878930,
-        "modified": 1477364878930,
-        "seen": true,
-        "name": "client/js/._bootstrap.js"
-      },
-      "client/js/._bootstrap.min.js": {
-        "previousModTime": 1477364878930,
-        "modified": 1477364878930,
-        "seen": true,
-        "name": "client/js/._bootstrap.min.js"
-      },
-      "client/js/._jquery.min.js": {
-        "previousModTime": 1477375004610,
-        "modified": 1477375004610,
-        "seen": true,
-        "name": "client/js/._jquery.min.js"
-      },
-      "client/js/._npm.js": {
-        "previousModTime": 1477364878940,
-        "modified": 1477364878940,
-        "seen": true,
-        "name": "client/js/._npm.js"
-      },
-      "client/mdl/._.DS_Store": {
-        "previousModTime": 1477375004860,
-        "modified": 1477375004860,
-        "seen": true,
-        "name": "client/mdl/._.DS_Store"
-      },
+     
       "client/mdl/._bower.json": {
         "previousModTime": 1477364878970,
         "modified": 1477364878970,
@@ -756,105 +618,7 @@
       "client/._.DS_Store": {
         "previousModTime": 1478008714605
       },
-      "client/._css": {
-        "previousModTime": 1478008714605
-      },
-      "client/._fonts": {
-        "previousModTime": 1478008714605
-      },
-      "client/._jquery-ui.css": {
-        "previousModTime": 1478008714605
-      },
-      "client/._jquery-ui.js": {
-        "previousModTime": 1478008714605
-      },
-      "client/._js": {
-        "previousModTime": 1478008714605
-      },
-      "client/._mdl": {
-        "previousModTime": 1478008714605
-      },
-      "client/._vue.js": {
-        "previousModTime": 1478008714605
-      },
-      "client/css/._bootstrap-theme.css": {
-        "previousModTime": 1478008714605
-      },
-      "client/css/._bootstrap-theme.css.map": {
-        "previousModTime": 1478008714605
-      },
-      "client/css/._bootstrap-theme.min.css": {
-        "previousModTime": 1478008714605
-      },
-      "client/css/._bootstrap.css": {
-        "previousModTime": 1478008714605
-      },
-      "client/css/._bootstrap.css.map": {
-        "previousModTime": 1478008714605
-      },
-      "client/css/._bootstrap.min.css": {
-        "previousModTime": 1478008714605
-      },
-      "client/fonts/._glyphicons-halflings-regular.eot": {
-        "previousModTime": 1478008714605
-      },
-      "client/fonts/._glyphicons-halflings-regular.svg": {
-        "previousModTime": 1478008714605
-      },
-      "client/fonts/._glyphicons-halflings-regular.ttf": {
-        "previousModTime": 1478008714605
-      },
-      "client/fonts/._glyphicons-halflings-regular.woff": {
-        "previousModTime": 1478008714605
-      },
-      "client/js/._.DS_Store": {
-        "previousModTime": 1478008714605
-      },
-      "client/js/._bootstrap.js": {
-        "previousModTime": 1478008714605
-      },
-      "client/js/._bootstrap.min.js": {
-        "previousModTime": 1478008714605
-      },
-      "client/js/._jquery.min.js": {
-        "previousModTime": 1478008714605
-      },
-      "client/js/._npm.js": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._.DS_Store": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._bower.json": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._LICENSE": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._material.css": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._material.js": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._material.min.css": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._material.min.css.map": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._material.min.js": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._material.min.js.map": {
-        "previousModTime": 1478008714605
-      },
-      "client/mdl/._package.json": {
-        "previousModTime": 1478008714605
-      },
-      "Next Idea/._.DS_Store": {
-        "previousModTime": 1478008714605
-      },
+     
       "client/1.jpg": {
         "previousModTime": 1478008714605
       },
