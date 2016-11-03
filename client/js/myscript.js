@@ -53,6 +53,7 @@ $(document).ready(function() {
         $(".mdl-button.giveup").css("display", "inline-block");
         $(".mdl-button.timing").css("display", "none");
         $(".tomato-card-instruction").hide(360);
+        socket.emit('start timing', { value: 'start' });
     });
     $(".giveup").click(function() {
         $(".mdl-progress.tomato-card-progress").css("display", "none");

@@ -22,7 +22,7 @@ var Switch = new mraa.Gpio(13);
 var cold = 0;
 var warm = 0;
 
-
+var blink = false;
 
 
 Pos.dir(mraa.DIR_OUT);
@@ -34,8 +34,8 @@ Switch.dir(mraa.DIR_IN);
 Neg.write(0);
 Neg2.write(0);
 
-Pos.write(1);
-Pos2.write(1);
+Pos.write(0);
+Pos2.write(0);
 
 pwm9.write(1);
 pwm3.write(1);
@@ -45,16 +45,15 @@ var switch_value = Switch.read();
 
 
 
-function  watchdog() {
-    setTimeout(function () {
-        if (switch_value != Switch.read())
-        {
-            if(Pos.read()){
+function watchdog() {
+    setTimeout(function() {
+        if (switch_value != Switch.read()) {
+            if (Pos.read()) {
                 Pos.write(0);
                 Pos2.write(0);
                 switch_value = Switch.read();
 
-            }else{
+            } else {
                 Pos.write(1);
                 Pos2.write(1);
                 switch_value = Switch.read();
@@ -63,41 +62,73 @@ function  watchdog() {
         }
         io.emit('watch dog', Pos.read());
         watchdog();
-    },200);
+    }, 200);
 }
 watchdog();
 
-io.on('connection', function (socket) {
-    socket.on('all LED', function (msg) {
+io.on('connection', function(socket) {
+    socket.on('all LED', function(msg) {
         Pos.write(msg.value);
         Pos2.write(msg.value);
     });
 
-    socket.on('LED state', function (msg) {
-        if(msg.temperature>50){
-            cold = (50-(msg.temperature-50))/50;
-            warm = 1;
-        }else{
-            warm = (msg.temperature/50);
-            cold = 1;
+    socket.on('LED state', function(msg) {
+        if (!blink) {
+            if (msg.temperature > 50) {
+                cold = (50 - (msg.temperature - 50)) / 50;
+                warm = 1;
+            } else {
+                warm = (msg.temperature / 50);
+                cold = 1;
+            }
+            pwm9.write(msg.LEDBrightness / 100 * cold);
+            pwm3.write(msg.LEDBrightness / 100 * warm);
+
         }
-        pwm9.write(msg.LEDBrightness/100*cold);
-        pwm3.write(msg.LEDBrightness/100*warm);
+    });
+
+    socket.on('start timing', function() {
+        blinkListener();
     });
 
 });
 
+function blinkListener() {
+    blink = true;
+    var tempCold = pwm9.read();
+    var tempWarm = pwm3.read();
+    var n = 99;
+    var m = n / 100;
+    var count = 0;
+    var fadeAmount = 2;
+    var blinkLoop = setInterval(function() {
+        if (n >= 16 && n <= 99) {
+            pwm9.write(tempCold * m);
+            pwm3.write(tempWarm * m);
+            n = n - fadeAmount;
+            m = n / 100;
+        } else {
+            fadeAmount = -fadeAmount;
+            n = n - fadeAmount;
+            count++;
+            if (count === 4) {
+                clearInterval(blinkLoop);
+                blink = false;
+            }
+        }
+    }, 15);
+}
 
 
 
+//===============================================================================================
 
-
-app.get('/', function (req, res) {
+app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/client', 'index.html'));
 });
 app.use(express.static(__dirname + '/client'));
 app.use('/client', express.static(__dirname + '/client'));
 
-http.listen(3000, function () {
+http.listen(3000, function() {
     console.log('Web server Active listening on *:3000');
 });
