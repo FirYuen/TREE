@@ -99,6 +99,7 @@ io.on('connection', function(socket) {
             } else {
                 io.emit('timing over', second);
                 clearInterval(timing);
+                blinkListener();
             }
         }, 1000);
         socket.on('giveup timing', function() {
