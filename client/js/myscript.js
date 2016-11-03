@@ -69,6 +69,10 @@ $(document).ready(function() {
     });
     socket.on('timing over', function() {
         $('.timing-content-title').html('1分钟');
+        $(".mdl-progress.tomato-card-progress").css("display", "none");
+        $(".mdl-button.giveup").css("display", "none");
+        $(".mdl-button.timing").css("display", "inline-block");
+        $(".tomato-card-instruction").show(360);
     });
 
 });
