@@ -56,7 +56,7 @@ $(document).ready(function() {
         socket.emit('start timing', { value: 1 });
     });
     $(".giveup").click(function() {
-        $('.timing-content-title').html('1分钟');
+         $('.timing-content-title').html('1分钟');
         $(".mdl-progress.tomato-card-progress").css("display", "none");
         $(".mdl-button.giveup").css("display", "none");
         $(".mdl-button.timing").css("display", "inline-block");
@@ -70,6 +70,7 @@ $(document).ready(function() {
     socket.on('timing over', function() {
         $('.timing-content-title').html('1分钟');
     });
+
 
 });
 
@@ -93,4 +94,5 @@ function blink(currentBirghtness) {
             temperature: colorTemperature
         });
     }, 30);
+
 }
