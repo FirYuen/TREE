@@ -53,9 +53,10 @@ $(document).ready(function() {
         $(".mdl-button.giveup").css("display", "inline-block");
         $(".mdl-button.timing").css("display", "none");
         $(".tomato-card-instruction").hide(360);
-        socket.emit('start timing', { value: 25 });
+        socket.emit('start timing', { value: 1 });
     });
     $(".giveup").click(function() {
+        $('.timing-content-title').html('1分钟');
         $(".mdl-progress.tomato-card-progress").css("display", "none");
         $(".mdl-button.giveup").css("display", "none");
         $(".mdl-button.timing").css("display", "inline-block");
@@ -63,7 +64,7 @@ $(document).ready(function() {
         socket.emit('giveup timing', { value: 'giveup timing' });
     });
     socket.on('now second', function(msg) {
-        msg = 25 * 60 - msg;
+        msg = 1 * 60 - msg;
         $('.timing-content-title').html('剩余' + msg);
     });
 });
