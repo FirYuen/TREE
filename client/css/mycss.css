@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #eee;
 }
 
@@ -11,24 +11,6 @@ body{
     width: 100%;
     margin: 0 26px;
 }
-
-.bottomSwitch {
-    width: 100%;
-    position: fixed;
-    bottom: 80px;
-}
-
-#switch {
-    float: right;
-    margin-right: 15px;
-    background-color: #00A5E0;
-}
-
-.switchIcon {
-    margin-top: -2px;
-}
-
-
 
 input[type="range"].range__width {
     -webkit-appearance: none;
@@ -60,16 +42,16 @@ input[type=range].range__width::-moz-range-thumb {
     z-index: 10;
 }
 
-
 .banner {
     width: 100%;
 }
 
-.banner-title-h2{
+.banner-title-h2 {
     margin: 0;
     padding: 24px 0 6px 0;
     color: #fff;
 }
+
 .banner-title-h5 {
     margin: 0;
     padding: 12px 0 6px 0;
@@ -99,44 +81,55 @@ input[type=range].range__width::-moz-range-thumb {
     width: 182px;
 }
 
-
-.control-panel-icon-box{
+.control-panel-icon-box {
     position: relative;
     width: 10%;
     height: 72px;
     float: left;
 }
 
-.control-panel-icon-box img{
+.control-panel-icon-box img {
     position: relative;
     width: 24px
 }
-.control-panel-icon-box>div{
+
+.control-panel-icon-box>div {
     width: 24px;
     height: 24px;
     margin: 24px auto;
 }
 
-.range-slider{
+.range-slider {
     position: relative;
     width: 80%;
     float: left;
 }
 
-.control-panel-title{
+.control-panel-title {
     color: #888;
     margin-bottom: 6px;
-    margin-top: 12px;
+    margin-top: 16px;
     margin-left: 4px;
 }
 
-
-
-.bottomSwitch{
-    z-index: 10;
+.bottomSwitch {
+    width: 100%;
+    position: fixed;
+    bottom: 80px;
+    z-index: 4;
 }
 
-.cold{
+#switch {
+    float: right;
+    margin-right: 15px;
+    background-color: #00A5E0;
+}
+
+.switchIcon {
+    margin-top: -4px;
+}
+
+.cold {
     position: relative;
     height: 12px;
     width: 12px;
@@ -145,7 +138,8 @@ input[type=range].range__width::-moz-range-thumb {
     border-radius: 50%;
     background-color: #2861FF;
 }
-.warm{
+
+.warm {
     position: relative;
     height: 12px;
     width: 12px;
@@ -154,11 +148,32 @@ input[type=range].range__width::-moz-range-thumb {
     border-radius: 50%;
     background-color: #FF6C00;
 }
-.control-panel-background{
+
+.control-panel-background {
     padding: 16px;
     background-color: #FFF;
+    border-radius: 3px;
 }
 
 label.list-radio {
-  display: inline;
+    display: inline;
+}
+
+.tomato-card.mdl-card {
+    width: 100%;
+}
+
+.tomato-card>.mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../welcome_card.jpg') center / cover;
+}
+
+.mdl-progress.tomato-card-progress {
+    display: none;
+    width: 100%;
+}
+
+.mdl-button.giveup {
+    display: none;
 }

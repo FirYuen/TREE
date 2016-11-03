@@ -10,202 +10,233 @@
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
-          mdl-layout--fixed-tabs">
-      <main class="mdl-layout__content">
-          <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-              <div class="mdl-grid mdl-grid--no-spacing">
-                  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
-                      <img class="banner" src="1.jpg" alt="" />
-                      <div class="banner-title">
-                          <h2 class="banner-title-h2">专注模式</h2>
-                          <div class="banner-title-cut-line">
-                          </div>
-                          <h5 class="banner-title-h5">
-                              前所未有的高效，就此拥有
-                          </h5>
-                      </div>
-                  </div>
-              </div>
-              <div class="page-content">
-                  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
-                  </div>
-              </div>
-          </section>
-          <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-              <div class="mdl-grid mdl-grid--no-spacing">
-                  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
-                      <img class="banner" src="5.jpg" alt="" />
-                      <div class="banner-title">
-                          <h2 class="banner-title-h2">常用设置</h2>
-                          <div class="banner-title-cut-line"></div>
-                          <h5 class="banner-title-h5">
-                              你的灯，属于你
-                          </h5>
-                      </div>
-                  </div>
-              </div>
-              <div class="page-content">
-                  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
-                      <h6 class="control-panel-title">色温/亮度</h6>
-                      <div class="control-panel-background">
-                          <ul class="mdl-list control-panel">
-                              <li class="mdl-list__item--two-line mdl-list__item">
-                                  <div class="control-panel-icon-box">
-                                      <div class="control-panel-icon">
-                                          <img src="svg/dark.svg" alt="" />
-                                      </div>
-                                  </div>
-                                  <div class="range-slider">
-                                      <input type="range" id="brightness" class="mdl-slider mdl-js-slider" step="0.1" min="5" max="99">
-                                  </div>
-                                  <div class="control-panel-icon-box">
-                                      <div class="control-panel-icon">
-                                          <img src="svg/light.svg" alt="" />
-                                      </div>
-                                  </div>
-                              </li>
-                              <li class="mdl-list__item--two-line mdl-list__item">
-                                  <div class="control-panel-icon-box">
-                                      <div class="control-panel-icon">
-                                          <div class="cold">
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="range-slider">
-                                      <input type="range" id="color-temperature" class="mdl-slider mdl-js-slider" step="0.1" min="1" max="99">
-                                  </div>
-                                  <div class="control-panel-icon-box">
-                                      <div class="control-panel-icon">
-                                          <div class="warm">
-                                          </div>
-                                      </div>
-                                  </div>
-                              </li>
-                          </ul>
-                      </div>
-                      <h6 class="control-panel-title">预设选择</h6>
-                      <div class="control-panel-background">
-                          <ul class="mdl-list control-panel">
-                              <li class="mdl-list__item--two-line mdl-list__item">
-                                  <span class="mdl-list__item-primary-content"><span>阅读预设</span>
-                                  <span class="mdl-list__item-sub-title">温和色温，适于阅读与写作</span>
-                                  </span>
-                                  <span class="mdl-list__item-secondary-action">
-                                      <label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
-                                          <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked/>
-                                      </label>
-                                  </span>
-                              </li>
-                              <li class="mdl-list__item--two-line mdl-list__item">
-                                  <span class="mdl-list__item-primary-content"><span>自然光预设</span>
-                                  <span class="mdl-list__item-sub-title">完美还原自然光，真彩视界</span>
-                                  </span>
-                                  <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2"><input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="2" /></label></span>
-                              </li>
-                              <li class="mdl-list__item--two-line mdl-list__item">
-                                  <span class="mdl-list__item-primary-content"><span>儿童预设</span>
-                                  <span class="mdl-list__item-sub-title">去蓝光、无频闪</span>
-                                  </span>
-                                  <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-3"><input type="radio" id="list-option-3" class="mdl-radio__button" name="options" value="3" /></label></span>
-                              </li>
-                              <li class="mdl-list__item--two-line mdl-list__item">
-                                  <span class="mdl-list__item-primary-content"><span>不使用预设</span>
-                                  <span class="mdl-list__item-sub-title">自己设定色温与亮度</span>
-                                  </span>
-                                  <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-4"><input type="radio" id="list-option-4" class="mdl-radio__button" name="options" value="4" checked/></label></span>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </section>
-          <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-              <div class="mdl-grid mdl-grid--no-spacing">
-                  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
-                      <img class="banner" src="3.jpg" alt="" />
-                      <div class="banner-title">
-                          <h2 class="banner-title-h2">专注模式</h2>
-                          <div class="banner-title-cut-line">
-                          </div>
-                          <h5 class="banner-title-h5">
-                              前所未有的高效，就此拥有
-                          </h5>
-                      </div>
-                  </div>
-              </div>
-              <div class="page-content">
-              </div>
-          </section>
-          <section class="mdl-layout__tab-panel" id="fixed-tab-4">
-              <div class="mdl-grid mdl-grid--no-spacing">
-                  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
-                      <img class="banner" src="4.jpg" alt="" />
-                      <div class="banner-title">
-                          <h2 class="banner-title-h2">专注模式</h2>
-                          <div class="banner-title-cut-line">
-                          </div>
-                          <h5 class="banner-title-h5">
-                              前所未有的高效，就此拥有
-                          </h5>
-                      </div>
-                  </div>
-              </div>
-              <div class="page-content">
-              </div>
-          </section>
-          <section class="mdl-layout__tab-panel" id="fixed-tab-5">
-              <div class="mdl-grid mdl-grid--no-spacing">
-                  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
-                      <img class="banner" src="5.jpg" alt="" />
-                      <div class="banner-title">
-                          <h2 class="banner-title-h2">专注模式</h2>
-                          <div class="banner-title-cut-line">
-                          </div>
-                          <h5 class="banner-title-h5">
-                              让前所未有的高效，就此拥有
-                          </h5>
-                      </div>
-                  </div>
-              </div>
-              <div class="page-content">
-              </div>
-          </section>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                <div class="mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                        <img class="banner" src="1.jpg" alt="" />
+                        <div class="banner-title">
+                            <h2 class="banner-title-h2">专注模式</h2>
+                            <div class="banner-title-cut-line">
+                            </div>
+                            <h5 class="banner-title-h5">
+                                前所未有的高效，就此拥有
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
 
-          <div class="bottomSwitch">
-              <div class="mdl-grid mdl-grid--no-spacing">
-                  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
-                      <div class="container">
-                          <button id="switch" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-shadow--4dp">
-                              <img class = "switchIcon" src="svg/ic_power_settings_new_24px.svg">
-                          </button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </main>
 
-      <div class="mdl-layout__header navbar-fixed-bottom">
-          <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-              <a href="#fixed-tab-1" class="mdl-layout__tab is-active">
-                  <img id="focus" src="svg/ic_timer_24px.svg">
-              </a>
-              <a href="#fixed-tab-2" class="mdl-layout__tab">
-                  <img src="svg/ic_format_indent_increase_24px.svg">
-              </a>
-              <a href="#fixed-tab-3" class="mdl-layout__tab">
-                  <img src="svg/ic_notifications_none_24px.svg">
-              </a>
-              <a href="#fixed-tab-4" class="mdl-layout__tab">
-                  <img src="svg/ic_person_outline_24px.svg">
-              </a>
-              <a href="#fixed-tab-5" class="mdl-layout__tab">
-                  <img src="svg/ic_menu_24px.svg">
-              </a>
-          </div>
-      </div>
 
-  </div>
+                        <div class="tomato-card mdl-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">25分钟</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <div class="tomato-card-instruction">
+                                    点击开始计时进入工作时间，请保持专注，灯光将会提示您工作时间的结束。
+                                </div>
+                                <div class="mdl-progress mdl-js-progress tomato-card-progress"></div>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect timing">开始计时</a>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect giveup">放弃时段</a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="tomato-card mdl-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">25分钟</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">开始计时</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                <div class="mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                        <img class="banner" src="5.jpg" alt="" />
+                        <div class="banner-title">
+                            <h2 class="banner-title-h2">常用设置</h2>
+                            <div class="banner-title-cut-line"></div>
+                            <h5 class="banner-title-h5">
+                                你的灯，属于你
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                        <h6 class="control-panel-title">色温/亮度</h6>
+                        <div class="control-panel-background">
+                            <ul class="mdl-list control-panel">
+                                <li class="mdl-list__item--two-line mdl-list__item">
+                                    <div class="control-panel-icon-box">
+                                        <div class="control-panel-icon">
+                                            <img src="svg/dark.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="range-slider">
+                                        <input type="range" id="brightness" class="mdl-slider mdl-js-slider" step="0.1" min="5" max="99">
+                                    </div>
+                                    <div class="control-panel-icon-box">
+                                        <div class="control-panel-icon">
+                                            <img src="svg/light.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mdl-list__item--two-line mdl-list__item">
+                                    <div class="control-panel-icon-box">
+                                        <div class="control-panel-icon">
+                                            <div class="cold">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-slider">
+                                        <input type="range" id="color-temperature" class="mdl-slider mdl-js-slider" step="0.1" min="1" max="99">
+                                    </div>
+                                    <div class="control-panel-icon-box">
+                                        <div class="control-panel-icon">
+                                            <div class="warm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h6 class="control-panel-title">预设选择</h6>
+                        <div class="control-panel-background">
+                            <ul class="mdl-list control-panel">
+                                <li class="mdl-list__item--two-line mdl-list__item">
+                                    <span class="mdl-list__item-primary-content"><span>阅读预设</span>
+                                    <span class="mdl-list__item-sub-title">温和色温，适于阅读与写作</span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-action">
+                                        <label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+                                            <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked/>
+                                        </label>
+                                    </span>
+                                </li>
+                                <li class="mdl-list__item--two-line mdl-list__item">
+                                    <span class="mdl-list__item-primary-content"><span>自然光预设</span>
+                                    <span class="mdl-list__item-sub-title">完美还原自然光，真彩视界</span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2"><input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="2" /></label></span>
+                                </li>
+                                <li class="mdl-list__item--two-line mdl-list__item">
+                                    <span class="mdl-list__item-primary-content"><span>儿童预设</span>
+                                    <span class="mdl-list__item-sub-title">去蓝光、无频闪</span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-3"><input type="radio" id="list-option-3" class="mdl-radio__button" name="options" value="3" /></label></span>
+                                </li>
+                                <li class="mdl-list__item--two-line mdl-list__item">
+                                    <span class="mdl-list__item-primary-content"><span>不使用预设</span>
+                                    <span class="mdl-list__item-sub-title">自己设定色温与亮度</span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-4"><input type="radio" id="list-option-4" class="mdl-radio__button" name="options" value="4" checked/></label></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                <div class="mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                        <img class="banner" src="3.jpg" alt="" />
+                        <div class="banner-title">
+                            <h2 class="banner-title-h2">专注模式</h2>
+                            <div class="banner-title-cut-line">
+                            </div>
+                            <h5 class="banner-title-h5">
+                                前所未有的高效，就此拥有
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-4">
+                <div class="mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                        <img class="banner" src="4.jpg" alt="" />
+                        <div class="banner-title">
+                            <h2 class="banner-title-h2">专注模式</h2>
+                            <div class="banner-title-cut-line">
+                            </div>
+                            <h5 class="banner-title-h5">
+                                前所未有的高效，就此拥有
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-5">
+                <div class="mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                        <img class="banner" src="5.jpg" alt="" />
+                        <div class="banner-title">
+                            <h2 class="banner-title-h2">专注模式</h2>
+                            <div class="banner-title-cut-line">
+                            </div>
+                            <h5 class="banner-title-h5">
+                                让前所未有的高效，就此拥有
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                </div>
+            </section>
+        </main>
+        <div class="bottomSwitch">
+            <div class="mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                    <div class="container">
+                        <button id="switch" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-shadow--4dp">
+                            <img class = "switchIcon" src="svg/ic_power_settings_new_24px.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mdl-layout__header navbar-fixed-bottom">
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#fixed-tab-1" class="mdl-layout__tab is-active">
+                    <img id="focus" src="svg/ic_timer_24px.svg">
+                </a>
+                <a href="#fixed-tab-2" class="mdl-layout__tab">
+                    <img src="svg/ic_format_indent_increase_24px.svg">
+                </a>
+                <a href="#fixed-tab-3" class="mdl-layout__tab">
+                    <img src="svg/ic_notifications_none_24px.svg">
+                </a>
+                <a href="#fixed-tab-4" class="mdl-layout__tab">
+                    <img src="svg/ic_person_outline_24px.svg">
+                </a>
+                <a href="#fixed-tab-5" class="mdl-layout__tab">
+                    <img src="svg/ic_menu_24px.svg">
+                </a>
+            </div>
+        </div>
+
+    </div>
 
 
     <script src="socket.io/socket.io.js"></script>
