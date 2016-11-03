@@ -57,7 +57,10 @@ $(document).ready(function() {
     });
     $(".giveup").click(function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
          $('.timing-content-title').html('1分钟');
+=======
+>>>>>>> parent of 2a6ec41... update 4 test3
 =======
 >>>>>>> parent of 2a6ec41... update 4 test3
         $(".mdl-progress.tomato-card-progress").css("display", "none");
@@ -71,11 +74,14 @@ $(document).ready(function() {
         $('.timing-content-title').html('剩余' + msg);
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
     socket.on('timing over', function() {
         $('.timing-content-title').html('1分钟');//aaaa
     });
 
 
+=======
+>>>>>>> parent of 2a6ec41... update 4 test3
 =======
 >>>>>>> parent of 2a6ec41... update 4 test3
 });
