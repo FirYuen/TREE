@@ -53,13 +53,17 @@ $(document).ready(function() {
         $(".mdl-button.giveup").css("display", "inline-block");
         $(".mdl-button.timing").css("display", "none");
         $(".tomato-card-instruction").hide(360);
-        socket.emit('start timing', { value: 'start' });
+        socket.emit('start timing', { value: 25 });
     });
     $(".giveup").click(function() {
         $(".mdl-progress.tomato-card-progress").css("display", "none");
         $(".mdl-button.giveup").css("display", "none");
         $(".mdl-button.timing").css("display", "inline-block");
         $(".tomato-card-instruction").show(360);
+        socket.emit('giveup timing', { value: 'giveup timing' });
+    });
+    socket.on('now second', function(msg) {
+        $('.timing-content-title').html('剩余' + msg);
     });
 });
 

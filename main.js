@@ -22,6 +22,8 @@ var Switch = new mraa.Gpio(13);
 var cold = 0;
 var warm = 0;
 
+
+
 var blink = false;
 
 
@@ -83,12 +85,25 @@ io.on('connection', function(socket) {
             }
             pwm9.write(msg.LEDBrightness / 100 * cold);
             pwm3.write(msg.LEDBrightness / 100 * warm);
-
         }
     });
 
-    socket.on('start timing', function() {
+    socket.on('start timing', function(msg) {
         blinkListener();
+        var second = 0;
+        var sumSecond = msg.value * 60;
+        var timing = setInterval(function() {
+            if (second < sumSecond) {
+                second++;
+                io.emit('now second', second);
+            } else {
+                io.emit('timing over', second);
+                clearInterval(timing);
+            }
+        }, 1000);
+        socket.on('giveup timing', function() {
+            clearInterval(timing);
+        });
     });
 
 });
