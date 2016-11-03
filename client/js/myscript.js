@@ -67,6 +67,10 @@ $(document).ready(function() {
         msg = 1 * 60 - msg;
         $('.timing-content-title').html('剩余' + msg);
     });
+    socket.on('timing over', function() {
+        $('.timing-content-title').html('1分钟');
+    });
+
 });
 
 
@@ -89,5 +93,4 @@ function blink(currentBirghtness) {
             temperature: colorTemperature
         });
     }, 30);
-
 }
