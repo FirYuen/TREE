@@ -63,6 +63,7 @@ $(document).ready(function() {
         socket.emit('giveup timing', { value: 'giveup timing' });
     });
     socket.on('now second', function(msg) {
+        msg = 25 * 60 - msg;
         $('.timing-content-title').html('剩余' + msg);
     });
 });
