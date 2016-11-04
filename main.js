@@ -1,4 +1,5 @@
 var mraa = require('mraa');
+var fs = require('fs');
 console.log('MRAA Version: ' + mraa.getVersion());
 
 var express = require('express');
