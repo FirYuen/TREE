@@ -17,8 +17,8 @@
         "name": "package.json"
       },
       "main.js": {
-        "previousModTime": 1478008695000,
-        "modified": 1478008695000,
+        "previousModTime": 1478185625000,
+        "modified": 1478185625000,
         "seen": true,
         "name": "main.js"
       },
@@ -47,8 +47,8 @@
         "name": "xdk/project-info.json"
       },
       "client/index.html": {
-        "previousModTime": 1478159480000,
-        "modified": 1478159480000,
+        "previousModTime": 1478176494000,
+        "modified": 1478176494000,
         "seen": true,
         "name": "client/index.html"
       },
@@ -59,8 +59,8 @@
         "name": "wsocket.xdk"
       },
       "wsocket.xdke": {
-        "previousModTime": 1478159535000,
-        "modified": 1478159535000,
+        "previousModTime": 1478264109000,
+        "modified": 1478264109000,
         "seen": true,
         "name": "wsocket.xdke"
       },
@@ -101,8 +101,8 @@
         "name": "client/js/jquery.min.js"
       },
       "client/js/myscript.js": {
-        "previousModTime": 1478159480000,
-        "modified": 1478159480000,
+        "previousModTime": 1478185625000,
+        "modified": 1478185625000,
         "seen": true,
         "name": "client/js/myscript.js"
       },
@@ -609,6 +609,12 @@
         "modified": 1478159480000,
         "seen": true,
         "name": "Next Idea/svg/light.svg"
+      },
+      "client/welcome_card.jpg": {
+        "previousModTime": 1478164277000,
+        "modified": 1478164277000,
+        "seen": true,
+        "name": "client/welcome_card.jpg"
       }
     },
     "boardFileStatus": {
@@ -633,13 +639,13 @@
       "main.js": {
         "name": "main.js",
         "modified": 1477048552000,
-        "previousModTime": 1477048552000,
+        "previousModTime": 1478264151644,
         "seen": true
       },
       "package.json": {
         "name": "package.json",
         "modified": 1476964949000,
-        "previousModTime": 1478159926738,
+        "previousModTime": 1478264151644,
         "seen": true
       },
       "websockets_client.png": {
@@ -663,19 +669,19 @@
       "client/index.css": {
         "name": "client/index.css",
         "modified": 1476964949000,
-        "previousModTime": 1476964949000,
+        "previousModTime": 1478264151644,
         "seen": true
       },
       "client/index.html": {
         "name": "client/index.html",
         "modified": 1477054767000,
-        "previousModTime": 1478159926738,
+        "previousModTime": 1478264151644,
         "seen": true
       },
       "client/index.js": {
         "name": "client/index.js",
         "modified": 1477048725000,
-        "previousModTime": 1477048725000,
+        "previousModTime": 1478264151644,
         "seen": true
       },
       "client/jquery-1.12.4.js": {
@@ -717,116 +723,287 @@
       "client/vue.js": {
         "name": "client/vue.js",
         "modified": 1477049030000,
-        "previousModTime": 1477049030000,
+        "previousModTime": 1478264151644,
         "seen": true
       },
       "xdk/project-info.json": {
         "name": "xdk/project-info.json",
         "modified": 1476964951000,
-        "previousModTime": 1476964951000,
+        "previousModTime": 1478264151644,
         "seen": true
       },
       "client/css/mycss.css": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
+      },
+      "client/fonts/glyphicons-halflings-regular.eot": {
+        "previousModTime": 1478264151644
+      },
+      "client/fonts/glyphicons-halflings-regular.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/fonts/glyphicons-halflings-regular.ttf": {
+        "previousModTime": 1478264151644
+      },
+      "client/fonts/glyphicons-halflings-regular.woff": {
+        "previousModTime": 1478264151644
+      },
+      "client/js/jquery.min.js": {
+        "previousModTime": 1478264151644
       },
       "client/js/myscript.js": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
+      },
+      "client/js/npm.js": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/LICENSE": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/bower.json": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/material.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/material.js": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/material.min.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/material.min.css.map": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/material.min.js": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/material.min.js.map": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/package.json": {
+        "previousModTime": 1478264151644
+      },
+      "client/._.DS_Store": {
+        "previousModTime": 1478264151644
+      },
+      "client/._css": {
+        "previousModTime": 1478264151644
+      },
+      "client/._fonts": {
+        "previousModTime": 1478264151644
+      },
+      "client/._jquery-ui.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/._jquery-ui.js": {
+        "previousModTime": 1478264151644
+      },
+      "client/._js": {
+        "previousModTime": 1478264151644
+      },
+      "client/._mdl": {
+        "previousModTime": 1478264151644
+      },
+      "client/._vue.js": {
+        "previousModTime": 1478264151644
+      },
+      "client/css/._bootstrap-theme.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/css/._bootstrap-theme.css.map": {
+        "previousModTime": 1478264151644
+      },
+      "client/css/._bootstrap-theme.min.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/css/._bootstrap.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/css/._bootstrap.css.map": {
+        "previousModTime": 1478264151644
+      },
+      "client/css/._bootstrap.min.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/fonts/._glyphicons-halflings-regular.eot": {
+        "previousModTime": 1478264151644
+      },
+      "client/fonts/._glyphicons-halflings-regular.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/fonts/._glyphicons-halflings-regular.ttf": {
+        "previousModTime": 1478264151644
+      },
+      "client/fonts/._glyphicons-halflings-regular.woff": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._bower.json": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._LICENSE": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._material.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._material.js": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._material.min.css": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._material.min.css.map": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._material.min.js": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._material.min.js.map": {
+        "previousModTime": 1478264151644
+      },
+      "client/mdl/._package.json": {
+        "previousModTime": 1478264151644
+      },
+      "Next Idea/._.DS_Store": {
+        "previousModTime": 1478264151644
+      },
+      "client/1.jpg": {
+        "previousModTime": 1478264151644
+      },
+      "client/2.jpg": {
+        "previousModTime": 1478264151644
+      },
+      "client/3.jpg": {
+        "previousModTime": 1478264151644
+      },
+      "client/4.jpg": {
+        "previousModTime": 1478264151644
+      },
+      "client/5.jpg": {
+        "previousModTime": 1478264151644
+      },
+      "client/svg/dark.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/svg/ic_format_indent_increase_24px.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/svg/ic_menu_24px.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/svg/ic_notifications_none_24px.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/svg/ic_person_outline_24px.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/svg/ic_power_settings_new_24px.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/svg/ic_timer_24px.svg": {
+        "previousModTime": 1478264151644
+      },
+      "client/svg/light.svg": {
+        "previousModTime": 1478264151644
       },
       "Next Idea/1.jpg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/2.jpg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/3.jpg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/4.jpg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/5.jpg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/index.html": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/main.js": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/welcome_card.jpg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/css/mycss.css": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/fonts/glyphicons-halflings-regular.eot": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/fonts/glyphicons-halflings-regular.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/fonts/glyphicons-halflings-regular.ttf": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/fonts/glyphicons-halflings-regular.woff": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/js/jquery.min.js": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/js/myscript.js": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/LICENSE": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/bower.json": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/material.css": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/material.js": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/material.min.css": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/material.min.css.map": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/material.min.js": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/material.min.js.map": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/mdl/package.json": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/svg/dark.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/svg/ic_format_indent_increase_24px.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/svg/ic_menu_24px.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/svg/ic_notifications_none_24px.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/svg/ic_person_outline_24px.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/svg/ic_power_settings_new_24px.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/svg/ic_timer_24px.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
       },
       "Next Idea/svg/light.svg": {
-        "previousModTime": 1478159926738
+        "previousModTime": 1478264151644
+      },
+      "client/welcome_card.jpg": {
+        "previousModTime": 1478264151644
       }
     }
   }
