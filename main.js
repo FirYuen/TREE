@@ -107,6 +107,10 @@ io.on('connection', function(socket) {
         });
     });
 
+    socket.on('new alarm info', function() {
+
+    })
+
 });
 
 function blinkListener() {
