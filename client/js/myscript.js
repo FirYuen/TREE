@@ -22,6 +22,29 @@ $("#switch").on('click', function(e) {
 });
 
 
+function blink(currentBirghtness) {
+    var temp = currentBirghtness;
+    var n = 0;
+    setTimeout(function() {
+        if (currentBirghtness >= 2) {
+            currentBirghtness = currentBirghtness - currentBirghtness / 6;
+        } else {
+            currentBirghtness = temp;
+            n++;
+            if (n === 4) {
+                return;
+            }
+
+        }
+        socket.emit('LED state', {
+            LEDBrightness: brightness,
+            temperature: colorTemperature
+        });
+    }, 30);
+}
+
+
+
 $(document).ready(function() {
     function modeInformationSet() {
         setTimeout(function() {
@@ -75,26 +98,33 @@ $(document).ready(function() {
         $(".tomato-card-instruction").show(360);
     });
 
-});
-
-
-function blink(currentBirghtness) {
-    var temp = currentBirghtness;
-    var n = 0;
-    setTimeout(function() {
-        if (currentBirghtness >= 2) {
-            currentBirghtness = currentBirghtness - currentBirghtness / 6;
+    $("#showTime").on('click', function() {
+        var timePicker = new DateTimePicker.Time()
+        timePicker.on('selected', function(formatTime, now) {
+            $("#showTime").html(formatTime);
+        })
+    });
+    $("#confirm-add-alarm").on('click', function() {
+        var naturalWakeUp = $('#natural-wake-up-switch:checkbox:checked').val();
+        var alarmNote = $('#alarm-note').val();
+        var alarmTime = $("#showTime").html();
+        if (alarmTime == '/ / : / /') {
+            $("#showTime").css('background-color', '#DDDDDD');
+            setTimeout(function() {
+                $("#showTime").css('background-color', '#FFFFFF');
+                setTimeout(function() {
+                    $("#showTime").css('background-color', '#DDDDDD');
+                    setTimeout(function() {
+                        $("#showTime").css('background-color', '#FFFFFF');
+                    }, 160);
+                }, 260);
+            }, 160);
         } else {
-            currentBirghtness = temp;
-            n++;
-            if (n === 4) {
-                return;
-            }
-
+            socket.emit('new alarm info', {
+                natural_wakeUp: naturalWakeUp,
+                alarm_tag: alarmNote,
+                alarm_time: alarmTime
+            });
         }
-        socket.emit('LED state', {
-            LEDBrightness: brightness,
-            temperature: colorTemperature
-        });
-    }, 30);
-}
+    });
+});

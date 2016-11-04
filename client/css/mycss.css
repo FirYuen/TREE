@@ -113,16 +113,17 @@ input[type=range].range__width::-moz-range-thumb {
 }
 
 .bottomSwitch {
-    width: 100%;
     position: fixed;
     bottom: 80px;
-    z-index: 4;
+    right: 0px;
+    z-index: 1;
 }
 
 #switch {
     float: right;
     margin-right: 15px;
     background-color: #00A5E0;
+    z-index: 10;
 }
 
 .switchIcon {
@@ -176,4 +177,27 @@ label.list-radio {
 
 .mdl-button.giveup {
     display: none;
+}
+
+.alarm-card.mdl-card {
+    width: 100%;
+}
+
+.alarm-card>.mdl-card__title {
+    height: 176px;
+    color: #fff;
+    background: url('../dog.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.mdl-card .mdl-textfield {
+    width: 100%;
+}
+
+.mdl-card .mdl-card-list {
+    position: relative;
+    margin-right: -16px;
+}
+
+#showTime {
+    transition: 0.26s;
 }
