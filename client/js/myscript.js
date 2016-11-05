@@ -5,21 +5,6 @@ var colorTemperature = 0;
 var mode = $('input[type="radio"][name="options"]:checked').val();
 
 
-socket.on('watch dog', function(msg) {
-    onOff = msg;
-});
-
-
-$("#switch").on('click', function(e) {
-    if (onOff === 0) {
-        onOff = 1;
-    } else {
-        onOff = 0;
-    }
-    socket.emit('all LED', {
-        value: onOff
-    });
-});
 
 
 function blink(currentBirghtness) {
@@ -43,9 +28,28 @@ function blink(currentBirghtness) {
     }, 30);
 }
 
-
+function IdShowUp(id){
+    $('#'+id).hide();
+    $('#'+id).show(720);
+}
 
 $(document).ready(function() {
+    socket.on('watch dog', function(msg) {
+    onOff = msg;
+});
+
+
+$("#switch").on('click', function(e) {
+    if (onOff === 0) {
+        onOff = 1;
+    } else {
+        onOff = 0;
+    }
+    socket.emit('all LED', {
+        value: onOff
+    });
+});
+
     function modeInformationSet() {
         setTimeout(function() {
             colorTemperature = document.getElementById('color-temperature').value;
@@ -125,6 +129,13 @@ $(document).ready(function() {
                 alarm_tag: alarmNote,
                 alarm_time: alarmTime
             });
+
         }
+    });
+    socket.on('new alarm setting',function(msg){
+        var alarmKey = msg.alarm_time.replace(":","");
+        var cardId = 'a'+alarmKey;
+        $('.alarm-zone').prepend("<div"+" id = a"+alarmKey+" class='alarm-card mdl-card'><div class='mdl-card__title'><h2 class='mdl-card__title-text timing-content-title'>"+msg.alarm_time + " AM 自然唤醒</h2></div><div class='mdl-card__supporting-text'><div class='alarm-card-instruction'>模拟日出光线的变化，用自然的方式，自然的唤醒你</div></div><div class='mdl-card__actions mdl-card--border'><a class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect'>停用闹钟</a><a class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect'>删除闹钟</a></div></div><br/>");
+        IdShowUp(cardId);
     });
 });
