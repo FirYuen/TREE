@@ -170,6 +170,10 @@ label.list-radio {
     background: url('../welcome_card.jpg') center / cover;
 }
 
+.tomato-card>.mdl-card__title.fengrossment {
+    background: url('../zz.jpg') center / cover;
+}
+
 .mdl-progress.tomato-card-progress {
     display: none;
     width: 100%;
@@ -186,16 +190,126 @@ label.list-radio {
 .alarm-card>.mdl-card__title {
     height: 176px;
     color: #fff;
+    background: url('../ala.jpg') center / cover;
+}
+
+.alarm-card>.mdl-card__title.nature {
+    background: url('../nature.jpg') center / cover;
+}
+
+.alarm-card>.mdl-card__title.routine {
+    background: url('../routine.jpg') center / cover;
+}
+
+.Tree-card.mdl-card {
+    width: 100%;
+}
+
+.Tree-card>.mdl-card__title {
+    height: 176px;
+    color: #fff;
     background: url('../dog.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.Tree-card p {
+    margin-bottom: -48px;
+}
+
+.Tree-card h2 {
+    margin-left: -56px;
+}
+
+.rank-card p {
+    margin-bottom: -48px;
+}
+
+.rank-card h2 {
+    margin-left: -56px;
+}
+
+.Tree-usage-log-slice {
+    height: 44px;
+}
+
+.rank-usage-log-slice {
+    height: 44px;
+    padding: 18px 0;
 }
 
 .mdl-card .mdl-textfield {
     width: 100%;
 }
 
+.Tree-usage-log.unfnished {
+    margin-top: 11px;
+}
+
+.Tree-usage-log {
+    float: right;
+    line-height: 20px;
+    text-align: right;
+}
+
 .mdl-card .mdl-card-list {
     position: relative;
     margin-right: -16px;
+}
+
+.Tree-usage-log-zone {
+    padding: 24px 16px;
+}
+
+.Tree-usage-log-slice-occupay {
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+.Tree-usage-log-icon-box {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    position: relative;
+}
+
+.Tree-usage-log-icon {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffd63f;
+}
+
+.Tree-usage-log-icon.unfnished {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #aaa;
+    -webkit-animation-name: unfnished;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes unfnished {
+    from {
+        background: #aaa;
+    }
+    to {
+        background: #888;
+        height: 34px;
+        width: 34px;
+    }
 }
 
 #showTime {
