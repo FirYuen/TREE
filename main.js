@@ -52,7 +52,7 @@ var switch_value = Switch.read();
 
 
 function watchdog() {
-    setTimeout(function () {
+    setTimeout(function() {
         if (switch_value != Switch.read()) {
             if (Pos.read()) {
                 Pos.write(0);
@@ -67,9 +67,9 @@ function watchdog() {
 
         }
         io.emit('watch dog', Pos.read());
-        if (getTimeStr() === alarmObj ){
-            if(!Pos.read()){
-                 Pos.write(1);
+        if (getTimeStr() === alarmObj) {
+            if (!Pos.read()) {
+                Pos.write(1);
                 Pos2.write(1);
                 switch_value = Switch.read();
             }
@@ -81,13 +81,13 @@ function watchdog() {
 }
 watchdog();
 
-io.on('connection', function (socket) {
-    socket.on('all LED', function (msg) {
+io.on('connection', function(socket) {
+    socket.on('all LED', function(msg) {
         Pos.write(msg.value);
         Pos2.write(msg.value);
     });
 
-    socket.on('LED state', function (msg) {
+    socket.on('LED state', function(msg) {
         if (!blink) {
             if (msg.temperature > 50) {
                 cold = (50 - (msg.temperature - 50)) / 50;
@@ -101,11 +101,11 @@ io.on('connection', function (socket) {
         }
     });
 
-    socket.on('start timing', function (msg) {
+    socket.on('start timing', function(msg) {
         blinkListener();
         var second = 0;
         var sumSecond = msg.value * 60;
-        var timing = setInterval(function () {
+        var timing = setInterval(function() {
             if (second < sumSecond) {
                 second++;
                 io.emit('now second', second);
@@ -115,18 +115,17 @@ io.on('connection', function (socket) {
                 blinkListener();
             }
         }, 1000);
-        socket.on('giveup timing', function () {
+        socket.on('giveup timing', function() {
             clearInterval(timing);
         });
     });
 
-    socket.on('new alarm info', function (msg) {
+    socket.on('new alarm info', function(msg) {
         fs.writeFileSync('./TREEsetting/alarmInfo/alarmSetting.json', JSON.stringify(msg));
         var alarmSetting = JSON.parse(fs.readFileSync('./TREEsetting/alarmInfo/alarmSetting.json'));
-        alarmObj = msg.alarm_time.replace(":","");
+        alarmObj = msg.alarm_time.replace(":", "");
         io.emit('new alarm setting', alarmSetting);
-    })
-
+    });
 });
 
 function blinkListener() {
@@ -137,7 +136,7 @@ function blinkListener() {
     var m = n / 100;
     var count = 0;
     var fadeAmount = 2;
-    var blinkLoop = setInterval(function () {
+    var blinkLoop = setInterval(function() {
         if (n >= 16 && n <= 99) {
             pwm9.write(tempCold * m);
             pwm3.write(tempWarm * m);
@@ -173,12 +172,12 @@ function getTimeStr() {
 
 //===============================================================================================
 
-app.get('/', function (req, res) {
+app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/client', 'index.html'));
 });
 app.use(express.static(__dirname + '/client'));
 app.use('/client', express.static(__dirname + '/client'));
 
-http.listen(3000, function () {
+http.listen(3000, function() {
     console.log('Web server Active listening on *:3000');
 });

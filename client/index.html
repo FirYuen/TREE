@@ -53,11 +53,6 @@
                                     <p>本周排名</p>
                                     <h2 class="mdl-card__title-text">第 4 名</h2>
                                 </div>
-                                <div class="mdl-card__menu">
-                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                    <img src="svg/ic_share_24px.svg">
-                                </button>
-                                </div>
                                 <div class="mdl-card__supporting-text">
                                     <div class="Tree-usage-log-zone">
                                         <div class='rank-usage-log-slice'>
@@ -80,12 +75,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="mdl-card__menu">
+                                    <button id="share-menu-1" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <img src="svg/ic_share_24px.svg">
+                                </button>
+                                </div>
                                 <div class="mdl-card__actions mdl-card--border">
                                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">展开更多</a>
                                 </div>
+                                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="share-menu-1">
+                                    <li class="mdl-menu__item">
+                                        分享到QQ空间
+                                    </li>
+                                    <li class="mdl-menu__item">
+                                        分享至QQ好友
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
                 </section>
                 <section class="mdl-layout__tab-panel" id="fixed-tab-2">
                     <div class="mdl-grid mdl-grid--no-spacing">
@@ -197,9 +206,17 @@
                                     <h2 class="mdl-card__title-text">105小时</h2>
                                 </div>
                                 <div class="mdl-card__menu">
-                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <button id="share-menu-2" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                                     <img src="svg/ic_share_24px.svg">
                                 </button>
+                                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="share-menu-2">
+                                        <li class="mdl-menu__item">
+                                            分享到QQ空间
+                                        </li>
+                                        <li class="mdl-menu__item">
+                                            分享至QQ好友
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="mdl-card__supporting-text">
                                     <div class="Tree-usage-log-zone">
@@ -211,7 +228,6 @@
                                         </div>
                                         <div class='Tree-usage-log-slice'>
                                             <img class='Tree-usage-log-slice-occupay' src="svg/ic_more_vert_48px.svg">
-                                            </img>
                                         </div>
                                         <div class='Tree-usage-log-slice'>
                                             <div class="Tree-usage-log-icon-box">
@@ -221,7 +237,6 @@
                                         </div>
                                         <div class='Tree-usage-log-slice'>
                                             <img class='Tree-usage-log-slice-occupay' src="svg/ic_more_vert_48px.svg">
-                                            </img>
                                         </div>
                                         <div class='Tree-usage-log-slice'>
                                             <div class="Tree-usage-log-icon-box">
@@ -231,7 +246,6 @@
                                         </div>
                                         <div class='Tree-usage-log-slice'>
                                             <img class='Tree-usage-log-slice-occupay' src="svg/ic_more_vert_48px.svg">
-                                            </img>
                                         </div>
                                         <div class='Tree-usage-log-slice'>
                                             <div class="Tree-usage-log-icon-box">
@@ -359,7 +373,6 @@
                 </div>
             </div>
         </div>
-
         <script src="socket.io/socket.io.js"></script>
         <script src="client/js/jquery.min.js"></script>
         <script src="client/mdl/material.min.js"></script>
